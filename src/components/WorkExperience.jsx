@@ -82,6 +82,7 @@ function WorkExperience() {
             <div>
                 <h3>Software Developer - Aircraft Mainentance Management Software</h3>
                 <h4>IFS</h4>
+                <h5>May 2017 - April 2018</h5>
                 <ul>
                     <li>Supported an aviation maintenance management software product for the commercial and defense industries.</li>
                     <li>Main responsibilities included: feature design and implementation, bug fixes, code reviews, and documentation.</li>
