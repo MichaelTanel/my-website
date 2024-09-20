@@ -1,7 +1,7 @@
 import { NavLink, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Education from "./components/Education";
-import Extracurriculars from "./components/Extracurriculars";
+import Interests from "./components/Interests";
 import Projects from "./components/Projects";
 import Summary from "./components/Summary";
 import WorkExperience from "./components/WorkExperience";
@@ -35,8 +35,8 @@ function App() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/extracurriculars" activeClassName="active">
-                                    Extracurriculars
+                                <NavLink to="/Interests" activeClassName="active">
+                                    Interests
                                 </NavLink>
                             </li>
                         </ul>
@@ -47,7 +47,7 @@ function App() {
                         <Route path="/work-experience" element={<WorkExperience />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/education" element={<Education />} />
-                        <Route path="/extracurriculars" element={<Extracurriculars />} />
+                        <Route path="/Interests" element={<Interests />} />
                     </Routes>
                 </div>
             </Router>
