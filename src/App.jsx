@@ -6,10 +6,15 @@ import Summary from "./components/Summary";
 import WorkExperience from "./components/WorkExperience";
 import ErrorBoundary from "./ErrorBoundary";
 
+// Get the basename dynamically from environment
+const getBasename = () => {
+    return process.env.NODE_ENV === "development" ? "/" : "/my-website";
+};
+
 function App() {
     return (
         <ErrorBoundary>
-            <Router>
+            <Router basename={getBasename()}>
                 <div>
                     <nav className="navbar">
                         <ul className="navbar-menu">
