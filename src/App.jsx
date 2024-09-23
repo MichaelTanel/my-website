@@ -2,7 +2,6 @@ import { NavLink, Route, BrowserRouter as Router, Routes } from "react-router-do
 import "./App.css";
 import Education from "./components/Education";
 import Interests from "./components/Interests";
-import Projects from "./components/Projects";
 import Summary from "./components/Summary";
 import WorkExperience from "./components/WorkExperience";
 import ErrorBoundary from "./ErrorBoundary";
@@ -15,18 +14,13 @@ function App() {
                     <nav className="navbar">
                         <ul className="navbar-menu">
                             <li>
-                                <NavLink to="/summary" activeClassName="active">
+                                <NavLink to="/" activeClassName="active">
                                     Summary
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink to="/work-experience" activeClassName="active">
                                     Work Experience
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/projects" activeClassName="active">
-                                    Projects
                                 </NavLink>
                             </li>
                             <li>
@@ -43,9 +37,8 @@ function App() {
                     </nav>
 
                     <Routes>
-                        <Route path="/summary" element={<Summary />} />
+                        <Route path="/" element={<Summary />} />
                         <Route path="/work-experience" element={<WorkExperience />} />
-                        <Route path="/projects" element={<Projects />} />
                         <Route path="/education" element={<Education />} />
                         <Route path="/Interests" element={<Interests />} />
                     </Routes>
