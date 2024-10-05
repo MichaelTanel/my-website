@@ -3,7 +3,7 @@ import React from "react";
 function Summary() {
     return (
         <div className="content summary">
-            <img src={require("../assets/hawks_room.jpg")} alt="Blackhawks Dressing Room" />
+            <img src={require("../assets/headshot.jpg")} alt="Blackhawks Dressing Room" />
             <ul>
                 <li>
                     Hi, I'm Michael Tanel and welcome to my site! I have over 5 years experience as a software developer, and have a passion for
